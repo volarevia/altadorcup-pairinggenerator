@@ -52,49 +52,39 @@ var misc = ['Tobias Sigmir', 'Hovri Sweet', 'Techo Fanatic',
 	'Prize Shop Committee Chairman', 'Inventory Management Intern', 
 	'VIP Pass Coordinator', 'Altador Cup NC Shopkeeper', 'Lemonade Jones', 
 	'Narinus'] //18
-/* This puts characters involved with the cup in their own array. It is an 
-array that will be randomized differently when compared to the team arrays. */
+/* This puts non-player characters involved with the cup in their own array. It 
+is an array that will be randomized differently when compared to the team 
+arrays. */
 
 var teams = [altador, brightvale, dariganCitadel, faerieland, hauntedWoods, 
 	kikoLake, krawkIsland, kreludor, lostDesert, maraqua, meridell, 
 	mysteryIsland, rooIsland, shenkuu, terrorMountain, tyrannia, virtupets, 
 	practiceTeam, misc]
-//This puts the array variables in an array in its own right.
+//This puts the team arrays in an array to be chosen from.
 
 function generator()	{
 	var index = Math.floor(Math.random() * 19);
+	//This generates the team that the player is chosen from
 	var team = teams[index];
-	if (team.length == 5)	{
-		var teamIndex = Math.floor(Math.random() * 4);
-		playerName = team[teamIndex];		
-	}
-	else if(team.length == 6)	{
-		var teamIndex = Math.floor(Math.random() * 5);
-		playerName = team[teamIndex];		
-	}
-	else if (team.length == 8)	{
-		var teamIndex = Math.floor(Math.random() * 7);
-		playerName = team[teamIndex];		
-	}
-	else if (team.length == 9)	{
-		var teamIndex = Math.floor(Math.random() * 8);
-		playerName = team[teamIndex];		
-	}
-	else	{
-		var teamIndex = Math.floor(Math.random() * 1);
-		playerName = team[teamIndex];
-	}
+	/*This puts the array of chosen members in a place where the function can
+		easily pick out which characters to use */
+	var teamIndex = Math.floor(Math.random() * (team.length - 1));
+	//This gives a choice of the amount of characters in an array
+	playerName = team[teamIndex];
+	//Chooses a player based on the randomly chosen location in the array.
 }
 
 function buttonPress(id1, id2)	{
 	generator();
-	x = playerName;
+	x = playerName; //assigns a player name to the first element
 	generator();
-	y = playerName;
+	y = playerName; //assigns a player name to the second element
 	while (x == y)	{
 		generator();
 		y = playerName;
+		//ensures the same character won't be chosen twice when generated
 	}
 	document.getElementById(id1).innerHTML = x;
 	document.getElementById(id2).innerHTML = y;
+	//puts the assigned player names in the actual document
 }
