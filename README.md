@@ -7,7 +7,7 @@ A pairing generator for your Altador Cup Fanfiction-writing needs!
 Neopets and all related characters are owned by Jumpstart.
 
 ##Licensing
-!(https://www.gnu.org/graphics/agplv3-88x31.png)
+![AGPL V3](https://www.gnu.org/graphics/agplv3-88x31.png)
 
 Copyright (C) 2016  M. Sara Friis
 
