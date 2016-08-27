@@ -14,7 +14,7 @@ var hauntedWoods = ['Fanetti', 'Krell Vitor', '"Brains" Mortigan', 'Zo Junior',
 var kikoLake = ['Erli Quinnock', '"Poke" Cellers', 'Meela Kitah', 
 	'Holbie Pinnock', 'Ditan Colb', 'Helmo Timm', 'Relle Felson']
 	//7
-var krawkIsland = ['Garven Hale', 'Felson "Dinksy" Collibridge', 'Coco Metrone',
+var krawkIsland = ['Garven Hale', 'Feldon "Dinksy" Collibridge', 'Coco Metrone',
 	'Nitri Cassale', 'Zayle Sufhaux', '"Dasher" Soley', 'Hoke Lemtry']
 	//7
 var kreludor = ['Jurin T.', 'Derlyn Fonnet', 'Ealyn Hawkshanks', 'Qyldae Wegg', 
@@ -30,7 +30,7 @@ var moltara = ['Harlis Neyhbol', 'Aldric Beign', 'Tulah Kisner',
 	'Vere Polnicek', 'Zax Bannet'] //5
 var mysteryIsland = ['Lor Benneveldt', 'Volgoth', 'Teylor Nix', 'Selmon Woulf', 
 	'Vela Binal', 'Bertie Shurtz', 'Yaniq Avaan', 'Maital Koric'] //8
-var rooIsland = ['Clutch Billiban', 'Lilo Blumario', 'Jair Tollet', 
+var rooIsland = ['Clutch Billaban', 'Lilo Blumario', 'Jair Tollet', 
 	'Fenny Vail', '"Squeaky" Tressif', 'Dayla'] //6
 var shenkuu = ['Xana DiLanche', 'Mirsha Grelinek', 'Timu', 'Antola Maeir', 
 	'Larcy Phu', 'Turo Rafels'] //6

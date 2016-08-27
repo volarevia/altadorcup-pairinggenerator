@@ -1,7 +1,7 @@
 #Altador Cup Pairing Generator
 A pairing generator for your Altador Cup Fanfiction-writing needs!
 
-######Version 1.0.0
+######Version 1.0.1
 
 ##Acknowledgement
 Neopets and all related characters are owned by Jumpstart.
