@@ -1,7 +1,7 @@
 #Altador Cup Pairing Generator
 A pairing generator for your Altador Cup Fanfiction-writing needs!
 
-######Version 1.0.1
+######Version 1.0.2
 
 ##Acknowledgement
 Neopets and all related characters are owned by Jumpstart.
@@ -34,4 +34,4 @@ Also, as simple as the program is, it is hardly perfect. Go check the issues
 section to see if there are ways to improve this piece of software.
 
 ##Site
-![Link To The Site](http://acpairinggenerator.volarevia.netne.net)
+![Link To The Site](https://volarevia.github.io/altadorcup-pairinggenerator/)

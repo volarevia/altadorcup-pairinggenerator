@@ -1,35 +1,68 @@
 <!DOCTYPE html>
 <html lang="en-GB">
+	<!--
+		This file is part of the Altador Cup Pairing Generator.
+
+		The Altador Cup Pairing Generator is free software: you can 
+		redistribute it and/or modify it under the terms of the GNU Affero 
+		General Public License as published by the Free Software Foundation, 
+		either version 3 of the License, or (at your option) any later version.
+
+		The Altador Cup Pairing Generator is distributed in the hope that it 
+		will be useful, but WITHOUT ANY WARRANTY; without even the implied 
+		warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See 
+		the GNU Affero General Public License for more details.
+
+		You should have received a copy of the GNU Affero General Public 
+		License along with the Altador Cup Pairing Generator.  If not, see 
+		<http://www.gnu.org/licenses/>.
+	-->
 	<head>
 		<title>Altador Cup Pairing Generator</title>
 		<meta charset="UTF-8">
 		<meta name="description" content="Randomize a fresh new couple to ship 
-		in regards to the Altador Cup!">
-		<meta name="keywords" content="neopets, altador, cup, neopet">
+			in regards to the Altador Cup!">
+		<meta name="keywords" 
+			content="neopets, altador, cup, neopet, pairing generator, 
+			shipping generator">
 		<meta name="author" content="M. Sara Friis">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<script src="pairings.js">
-		</script>
+		<link rel="apple-touch-icon" sizes="180x180" 
+			href="apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="favicon-32x32.png" 
+			sizes="32x32">
+		<link rel="icon" type="image/png" href="favicon-16x16.png" 
+			sizes="16x16">
+		<link rel="manifest" href="manifest.json">
+		<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="theme-color" content="#ffffff">
+		<script src="pairings.js"></script>
 	</head>
 	<body>
 		<noscript>
 			<div id="noscript">
 					<p>You need Javascript to use this generator, silly!</p>
-					<p>While I'm at it, may I recommend the YesScript addon? 
-					#NotAllScripts</p>
+					<p>
+						While I'm at it, may I recommend the YesScript addon? 
+						#NotAllScripts
+					</p>
 					<p>
 						Firefox & Compatibles (including Pale Moon):
 						<br />
 						<a 
 						href="https://addons.mozilla.org/en-US/firefox/addon/yesscript/">
-						Download Here
+							Download Here
 						</a>
 					</p>
-					<p>Sadly, nothing for Chrome and Compatibles or Microsoft 
-					browsers yet.</p>
-					<p>Also, I wish there was something like this for 
-					AdBlockers.</p>
+					<p>
+						Sadly, nothing for Chrome and Compatibles or Microsoft 
+						browsers yet.
+					</p>
+					<p>
+						Also, I wish there was something like this for 
+						AdBlockers.
+					</p>
 			</div>
 		</noscript>
 		<div id="generator">
@@ -37,8 +70,6 @@
 			<p>This generator will give you a fancy new couple for that 
 			Altador Cup fanfic you were not thinking about at all.</p>
 			<p>
-				<!-- <input type="button" onclick="buttonPress('p1', 'p2')" 
-				value="Get your brand new (N)OTP!" /> -->
 				<button onclick="buttonPress('p1', 'p2')">
 					Get your brand new (N)OTP!
 				</button>
