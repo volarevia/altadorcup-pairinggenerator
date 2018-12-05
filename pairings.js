@@ -1,92 +1,81 @@
-/*
-    This file is part of the Altador Cup Pairing Generator.
-
-    The Altador Cup Pairing Generator is free software: you can redistribute it 
-	and/or modify it under the terms of the GNU Affero General Public License 
-	as published by the Free Software Foundation, either version 3 of the 
-	License, or (at your option) any later version.
-
-    The Altador Cup Pairing Generator is distributed in the hope that it will 
-	be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of 
-	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Affero 
-	General Public License for more details.
-
-    You should have received a copy of the GNU Affero General Public License 
-	along with the Altador Cup Pairing Generator.  If not, see 
-	<http://www.gnu.org/licenses/>.
-*/
-
-var altador = ['Salayne Ritad', '"Trapper" Remis', 'Lyvon Cibaire', 'Foltaggio',
-	'Cawley Embith'] //6
-var brightvale = ['Orie Dinelle', 'Montecito', 'Reb Weemelott', 'Gordo Gunnels',
-	'Kayn Hireck'] //5
-var dariganCitadel = ['Reshar Collifey', 'Layton Vickles', 
-	'Tormo "The Terror" Frein', 'Kep Bonnefie', 'Tandrak Shaye', 'Mungo Lifler']
-	//6
-var faerieland = ['Valtonous Rea', 'Kakoni Worrill', 'Elbin Kroe', 
-	'Delma Harrence', 'Ciona Broan', 'Babolino', 'Elbin Towse', 'Palia Alback']
+const altador = ['Salayne Ritad', '"Trapper" Remis', 'Lyvon Cibaire',
+                 'Foltaggio', 'Cawley Embith']; //6
+const brightvale = ['Orie Dinelle', 'Montecito', 'Reb Weemelott',
+                    'Gordo Gunnels', 'Kayn Hireck']; //5
+const dariganCitadel = ['Reshar Collifey', 'Layton Vickles', 
+	                      'Tormo "The Terror" Frein', 'Kep Bonnefie',
+                        'Tandrak Shaye', 'Mungo Lifler']; //6
+const faerieland = ['Valtonous Rea', 'Kakoni Worrill', 'Elbin Kroe', 
+	                  'Delma Harrence', 'Ciona Broan', 'Babolino',
+                    'Elbin Towse', 'Palia Alback']; //8
+const hauntedWoods = ['Fanetti', 'Krell Vitor', '"Brains" Mortigan',
+                      'Zo Junior', 'Wan Dirx', 'Autrey Fulse', 'Chelo Binay'];
 	//8
-var hauntedWoods = ['Fanetti', 'Krell Vitor', '"Brains" Mortigan', 'Zo Junior', 
-	'Wan Dirx', 'Autrey Fulse', 'Chelo Binay']
+const kikoLake = ['Erli Quinnock', '"Poke" Cellers', 'Meela Kitah', 
+	                'Holbie Pinnock', 'Ditan Colb', 'Helmo Timm', 'Relle Felson'];
+	//7
+const krawkIsland = ['Garven Hale', 'Feldon "Dinksy" Collibridge',
+                     'Coco Metrone', 'Nitri Cassale', 'Zayle Sufhaux',
+                     '"Dasher" Soley', 'Hoke Lemtry']; //7
+const kreludor = ['Jurin T.', 'Derlyn Fonnet', 'Ealyn Hawkshanks',
+                  'Qyldae Wegg', 'Zenor Kevix', 'Xila Kitae', 'Vignacio']; //7
+const lostDesert = ['Leera Heggle', 'Luvea Trivon', 'Vonde Cayle',
+                    'Rhee Solters', 'Derbi Azar', '"Dirty" Navers',
+                    'Wyett Tuggins']; //7
+const maraqua = ['Tonie Plessix', 'Elon "The Black Hole" Hughlis',
+                 'Oten Runeu', 'Lamelle Turow', 'Barit Jowes', 'Dorina Hals',
+                 'Filo Desenz']; //7
+const meridell = ['Yoris Obbles', 'Ilsa Ellits', '"Wizard" Windelle', 
+                  'Fiorina', 'Ethel Boortz', 'Gregorio Maille',
+                  'Sir Pollonaire Freidl', 'Vitri Sitol'];
 	//8
-var kikoLake = ['Erli Quinnock', '"Poke" Cellers', 'Meela Kitah', 
-	'Holbie Pinnock', 'Ditan Colb', 'Helmo Timm', 'Relle Felson']
+const moltara = ['Harlis Neyhbol', 'Aldric Beign', 'Tulah Kisner',
+                 'Vere Polnicek', 'Zax Bannet']; //5
+const mysteryIsland = ['Lor Benneveldt', 'Volgoth', 'Teylor Nix',
+                       'Selmon Woulf', 'Vela Binal', 'Bertie Shurtz',
+                       'Yaniq Avaan', 'Maital Koric']; //8
+const rooIsland = ['Clutch Billaban', 'Lilo Blumario', 'Jair Tollet',
+                   'Fenny Vail', '"Squeaky" Tressif', 'Dayla']; //6
+const shenkuu = ['Xana DiLanche', 'Mirsha Grelinek', 'Timu', 'Antola Maeir', 
+	               'Larcy Phu', 'Turo Rafels']; //6
+const terrorMountain = ['Minae Mitora', 'Prytariel', 'Rinok Fitel',
+                        'Evrem Guilako', 'Osielle Lidel', 'Selwick Phoss',
+                        'Tico Tems', 'Vaydo Pohz', 'Almadaira']; //9
+const tyrannia = ['Mor Gollog', 'Loryche', '"Scrap" Taggert', 'Wila Benne', 
+	                '"Spikes" Barmie']; //5
+const virtupets = ['Goltron Mk I', 'Keetra Deile', 'Sela Pretore', 
+	                 'Weldar Xupenfarb', 'XL Striker 3.8', 'Z-4B Goalinator',
+                   'Kerib Vickers'];
 	//7
-var krawkIsland = ['Garven Hale', 'Feldon "Dinksy" Collibridge', 'Coco Metrone',
-	'Nitri Cassale', 'Zayle Sufhaux', '"Dasher" Soley', 'Hoke Lemtry']
-	//7
-var kreludor = ['Jurin T.', 'Derlyn Fonnet', 'Ealyn Hawkshanks', 'Qyldae Wegg', 
-	'Zenor Kevix', 'Xila Kitae', 'Vignacio'] //7
-var lostDesert = ['Leera Heggle', 'Luvea Trivon', 'Vonde Cayle', 'Rhee Solters',
-	'Derbi Azar', '"Dirty" Navers', 'Wyett Tuggins'] //7
-var maraqua = ['Tonie Plessix', 'Elon "The Black Hole" Hughlis', 'Oten Runeu', 
-	'Lamelle Turow', 'Barit Jowes', 'Dorina Hals', 'Filo Desenz'] //7
-var meridell = ['Yoris Obbles', 'Ilsa Ellits', '"Wizard" Windelle',  'Fiorina', 
-	'Ethel Boortz', 'Gregorio Maille', 'Sir Pollonaire Freidl', 'Vitri Sitol']
-	//8
-var moltara = ['Harlis Neyhbol', 'Aldric Beign', 'Tulah Kisner', 
-	'Vere Polnicek', 'Zax Bannet'] //5
-var mysteryIsland = ['Lor Benneveldt', 'Volgoth', 'Teylor Nix', 'Selmon Woulf', 
-	'Vela Binal', 'Bertie Shurtz', 'Yaniq Avaan', 'Maital Koric'] //8
-var rooIsland = ['Clutch Billaban', 'Lilo Blumario', 'Jair Tollet', 
-	'Fenny Vail', '"Squeaky" Tressif', 'Dayla'] //6
-var shenkuu = ['Xana DiLanche', 'Mirsha Grelinek', 'Timu', 'Antola Maeir', 
-	'Larcy Phu', 'Turo Rafels'] //6
-var terrorMountain = ['Minae Mitora', 'Prytariel', 'Rinok Fitel', 
-	'Evrem Guilako', 'Osielle Lidel', 'Selwick Phoss', 'Tico Tems', 
-	'Vaydo Pohz', 'Almadaira'] //9
-var tyrannia = ['Mor Gollog', 'Loryche', '"Scrap" Taggert', 'Wila Benne', 
-	'"Spikes" Barmie'] //5
-var virtupets = ['Goltron Mk I', 'Keetra Deile', 'Sela Pretore', 
-	'Weldar Xupenfarb', 'XL Striker 3.8', 'Z-4B Goalinator', 'Kerib Vickers'] 
-	//7
-var practiceTeam = ['Wartroot', 'Vinarok', 'Zeenana', 'Lemoran', 'Tagobo'] //5
+const practiceTeam = ['Wartroot', 'Vinarok', 'Zeenana', 'Lemoran', 'Tagobo'];
+  //5
 /* These array variables group players by team. The Practice Team is included, 
 as they are a team. */
-var misc = ['Tobias Sigmir', 'Hovri Sweet', 'Techo Fanatic', 
-	'Slushie Slinger Waitress', 'Altador Cup Referee', 'Committee Skeith', 
-	'Committee Draik', 'Committee Aisha', 'Quiggle Quiz Giver', 'Coach Riki',  
-	'Altador Cup Souvenir Shopkeeper', "Techo Fanatic's Butler", 
-	'Prize Shop Committee Chairman', 'Inventory Management Intern', 
-	'VIP Pass Coordinator', 'Altador Cup NC Shopkeeper', 'Lemonade Jones', 
-	'Narinus'] //18
+const misc = ['Tobias Sigmir', 'Hovri Sweet', 'Techo Fanatic',
+              'Slushie Slinger Waitress', 'Altador Cup Referee',
+              'Committee Skeith', 'Committee Draik', 'Committee Aisha',
+              'Quiggle Quiz Giver', 'Coach Riki',
+              'Altador Cup Souvenir Shopkeeper', "Techo Fanatic's Butler",
+              'Prize Shop Committee Chairman', 'Inventory Management Intern',
+              'VIP Pass Coordinator', 'Altador Cup NC Shopkeeper',
+              'Lemonade Jones', 'Narinus']; //18
 /* This puts non-player characters involved with the cup in their own array. It 
 is an array that will be randomized differently when compared to the team 
 arrays. */
 
-var teams = [altador, brightvale, dariganCitadel, faerieland, hauntedWoods, 
-	kikoLake, krawkIsland, kreludor, lostDesert, maraqua, meridell, 
-	mysteryIsland, rooIsland, shenkuu, terrorMountain, tyrannia, virtupets, 
-	practiceTeam, misc]
+let teams = [altador, brightvale, dariganCitadel, faerieland, hauntedWoods,
+             kikoLake, krawkIsland, kreludor, lostDesert, maraqua, meridell,
+             mysteryIsland, rooIsland, shenkuu, terrorMountain, tyrannia,
+             virtupets, practiceTeam, misc];
 //This puts the team arrays in an array to be chosen from.
 
 function generator()	{
-	var index = Math.floor(Math.random() * 19);
+	let index = Math.floor(Math.random() * 19);
 	//This generates the team that the player is chosen from
-	var team = teams[index];
+	let team = teams[index];
 	/*This puts the array of chosen members in a place where the function can
 		easily pick out which characters to use */
-	var teamIndex = Math.floor(Math.random() * (team.length - 1));
+	let teamIndex = Math.floor(Math.random() * (team.length - 1));
 	//This gives a choice of the amount of characters in an array
 	playerName = team[teamIndex];
 	//Chooses a player based on the randomly chosen location in the array.
@@ -94,9 +83,9 @@ function generator()	{
 
 function buttonPress(id1, id2)	{
 	generator();
-	x = playerName; //assigns a player name to the first element
+	let x = playerName; //assigns a player name to the first element
 	generator();
-	y = playerName; //assigns a player name to the second element
+	let y = playerName; //assigns a player name to the second element
 	while (x == y)	{
 		generator();
 		y = playerName;
