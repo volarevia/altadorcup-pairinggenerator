@@ -1,63 +1,66 @@
-@font-face	{
-	font-family: "Liberation Sans";
-	src:	url(fonts/LiberationSans-Regular.ttf);
+* {
+    margin: 0;
+    padding: 0;
 }
 @font-face	{
-	font-family: "Liberation Sans";
-	src:	url(fonts/LiberationSans-Bold.ttf);
-	font-weight:	bold;
+    font-family: "Liberation Sans";
+    src:	url(fonts/LiberationSans-Regular.ttf);
+}
+@font-face	{
+    font-family: "Liberation Sans";
+    src:	url(fonts/LiberationSans-Bold.ttf);
+    font-weight:	bold;
 }
 body	{
-	text-align:	center;
-	font-family:	"Liberation Sans";
-	background:	url(images/background.png);
+    text-align:	center;
+    font-family:	"Liberation Sans";
+    background:	url(images/background.png);
 }
 h1, h2, h3	{
-	font-family:	"Liberation Sans";
-	font-weight:	bold;
+    font-family:	"Liberation Sans";
+    font-weight:	bold;
 }
 #noscript	{
-	color:	#7fff00;
-	background:	red;
-	border:	#7fff00 dashed 5px;
-	margin:	auto;
-	width:	32.5%;
+    color:	#7fff00;
+    background:	red;
+    border:	#7fff00 dashed 5px;
+    margin:	auto;
+    width:	32.5%;
 }
 #noscript a	{
-	color:	#7fff00;
-	text-decoration: none;
+    color:	#7fff00;
+    text-decoration: none;
 }
 #generator	{
-	background:	Gold;
-	background:	linear-gradient(45deg, Gold, Goldenrod, Gold, Goldenrod);
-	border:	DarkGoldenRod 10px solid;
-	color: #604706;
-	margin:	auto;
-	width:	50%;
-	border-radius:	20px 60px 30px;
-	box-shadow:	15px 30px 2em #000;
-	padding:	0px 0px 0px 5px;
+    background:	Gold;
+    background:	linear-gradient(45deg, Gold, Goldenrod, Gold, Goldenrod);
+    border:	DarkGoldenRod 10px solid;
+    color: #604706;
+    margin:	auto;
+    width:	50%;
+    border-radius:	20px 60px 30px;
+    box-shadow:	15px 30px 2em #000;
+    padding:	0px 0px 0px 5px;
 }
-#shippingSign	{
-	font-size:	1.25em;		
+.shippingSign	{
+    font-weight: bold;
 }
-#p1, #p2	{
-	font-family:	"Liberation Sans";
-	font-weight:	bold;
-	font-size:	1.5em;
+#ship	{
+    font-family:	"Liberation Sans";
+    font-size:	1.5em;
 }
 @media screen and (max-width: 1023px){
-	#generator	{
-		width:	75%;
-	}
+    #generator	{
+        width:	75%;
+    }
 }
 @media screen and (max-width: 680px){
-	#generator	{
-		width:	100%;
-		border:	none;
-		border-radius:	0px;
-		margin-top:	-23px;
-		margin-left:	-10px;
-		box-shadow:	0px 0px;
-	}
+    #generator	{
+        width:	100%;
+        border:	none;
+        border-radius:	0px;
+        margin-top:	-23px;
+        margin-left:	-10px;
+        box-shadow:	0px 0px;
+    }
 }
